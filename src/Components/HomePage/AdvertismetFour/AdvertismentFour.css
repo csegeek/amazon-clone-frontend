@@ -1,0 +1,28 @@
+.AdvertismentOne__main{
+    height:38rem;
+    min-width:33.5rem;
+    background: white;
+    margin: 1rem;
+    
+}
+
+.AdvertismentOne__header{
+font-size: 2.1rem;
+line-height: 2.7rem;
+font-weight: bold;
+padding: 1.5rem;
+}
+.AdvertismentOne__body{
+  padding-left:1.5rem ;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.AdvertismentOne__footer{
+ padding: 1.5rem;
+}
+.ad__fourimage{
+    width: 14rem;
+    height: 10rem;
+    margin: .5rem;
+}

@@ -1,0 +1,42 @@
+.createaccount__component{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.createaccount__container {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border: .1rem solid lightgray;
+}
+
+.amazon__logo >img{
+    height: 8rem;
+    width: 8rem;
+    object-fit: contain;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.createaccount__container  > h1 {
+    font-weight: 700;
+    margin-bottom: 2rem ;
+}
+
+.createaccount__container  > form > h5 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.createaccount__container  > form > input {
+    font-size: 1.8rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    width: 98%;
+    outline: none;
+    border: .1rem solid lightgray;
+}

@@ -1,0 +1,175 @@
+.navbar__component{
+    width: 100vw;
+    height: 6rem;
+    background-color: #131921;
+    display: flex;
+}
+
+.navbar__logo >img{
+ width:10rem;
+ height: 6rem;
+ margin:0.4rem 1.2rem;
+}
+
+.navbar__locator{
+    display: flex;
+    margin: 2rem 0rem;
+}
+
+
+.navbar__location{
+    color: white;
+    font-weight: 800;
+    margin-left: 0.5rem;
+    margin: 1rem;
+}
+
+.navbar__locatorImage >img{
+    width: 1.9rem;
+	height: 2.1rem;
+    
+}
+.navbar__searchcomponent{
+    display: flex;
+}
+.navbar__searchbox{
+    height: 4rem;
+    width:64rem;
+    margin-top:0.8rem;
+    
+}
+@media only screen and (max-width: 1024px){
+    .navbar__searchbox{
+        height: 3.5rem;
+        width:64rem;
+        margin-top:0.8rem;
+        
+    }
+  
+  } 
+  @media only screen and (max-width: 768px){
+    .navbar__searchbox{
+        height: 3.2rem;
+        width:64rem;
+        margin-top:0.8rem;
+        
+    }
+  
+  } 
+
+
+
+
+.navbar__searchicondiv{
+    background-color: #F3A847;
+    width: 4.8rem;
+	height: 4.22rem;
+    margin-top: .9rem;
+    border-radius:0rem .5rem  .5rem 0rem ;
+}
+ .navbar__searchicon >img{
+  
+	height: 2.3rem;
+    margin:1rem;   
+} 
+
+.navbar__dropdown select{
+     width:6rem;
+     height:4.4rem;
+     font-size: 2.2rem;
+     margin-top: .8rem;
+     background-color:#DADADA ;
+     border-radius: 0.5rem 0px 0px .5rem;
+     text-align-last: center;
+     margin-left:1rem;
+ }
+ .navbar__cart{
+     display: flex;
+ }
+
+ .logout__btn>button{
+    color:white;
+    width: 8rem;
+    height:4rem;
+    margin: 1rem;
+    font-size:2rem ;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;  
+ }
+ .hide{
+    display: none;
+ }
+.navbar__carticon >img{
+    /* background: url('https://ik.imagekit.io/amazonclone01/amazon-image/sprite_350x_T-5jVgn9m.png?ik-sdk-version=javascript-1.4.3&updatedAt=1654715770855') no-repeat -217px -336px; */
+	width: 4.3rem;
+	height: 3rem;
+    margin-top: -1.2rem;
+   
+}
+.navbar__component a {
+    color: inherit;
+     text-decoration: none;
+   }
+   
+
+ .navbar__text{
+     color: white;
+     font-size: 1.5rem;
+     margin: 1rem 2rem;
+ }
+
+
+ @media only screen and (max-width: 768px){
+    .navbar__text{
+        color: white;
+        font-size: 1 rem;
+        margin: 0rem;
+    }
+  
+  } 
+
+  @media only screen and (max-width: 1024px){
+    .navbar__text {
+        color: white;
+        font-size: 1.4rem;
+        margin: 1rem 2rem;
+    }
+  
+  }
+
+
+ .navbar__cart_item_count{
+     font-weight: bold;
+     position: relative;
+     left:2rem;
+     top:-0.8rem;
+     color:#F08804;
+
+ }
+ .navbar__region img{
+     width: 60%;
+     height: 60%;
+     margin: .8rem 2rem;
+     
+    
+ }
+ .navbar__footer {
+    width: 100vw;
+    height: 3.5rem;
+    background-color: #22303E;
+    color: white;
+    display: flex;
+    
+}
+.navbar__footer_text {
+    margin: .5rem 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+
+/* responsive */

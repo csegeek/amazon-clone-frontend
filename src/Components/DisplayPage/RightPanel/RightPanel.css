@@ -1,0 +1,32 @@
+.Rightpanel__main{
+    height: 100vh; 
+    display: flex;
+    flex-wrap: wrap;
+}
+.product {
+    width: 22.8rem;
+    margin: 3rem;
+}
+
+.product__name {
+    font-size: 1.6rem!important;
+    line-height: 2.4rem!important;
+    font-weight: 400 !important;
+}
+.product__image >img{
+    height: 28rem;
+    width: 20rem;
+
+}
+.product__rating {
+    font-size: 1.4rem;
+    color: #007185;
+}
+.product__price {
+    color: #B12704;
+    font-size: 2rem;
+    font-weight: 600;
+}
+a{
+    text-decoration: none; 
+}

@@ -1,0 +1,13 @@
+.Leftpanel__main {
+    height: 100vh;
+    border-right: 2px solid #DDDDDD;
+    padding: 4rem; 
+}
+.Leftpanel__header{
+    font-weight: bold;
+    margin: 1rem;
+}
+.brandname{
+    display: block;
+    width: 10rem;
+}
