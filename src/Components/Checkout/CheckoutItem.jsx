@@ -15,7 +15,7 @@ function CheckoutItem(props) {
       productId:props.definition.productID
      }
      console.log(cart)
-  axios.delete("http://localhost:8081/amazon/addToCart/remove",{ data: cart }).then(
+  axios.delete("https://amazon-clone-cart-mservice.herokuapp.com/amazon/addToCart/remove",{ data: cart }).then(
     window.location.reload()
   )
   .catch(

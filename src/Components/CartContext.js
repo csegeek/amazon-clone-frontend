@@ -20,7 +20,7 @@ import axios from "axios";
     
   componentDidMount(){
       var userid=localStorage.getItem("userId")
-        axios.get(`http://localhost:8081/amazon/addToCart/show/${userid}`).then(
+        axios.get(`https://amazon-clone-cart-mservice.herokuapp.com/amazon/addToCart/show/${userid}`).then(
             (res)=>{
                 console.log(res)
                 this.setState({

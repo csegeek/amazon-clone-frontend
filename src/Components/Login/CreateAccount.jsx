@@ -24,7 +24,7 @@ function CreateAccount() {
             "uniqueId":user.uid
           }
 
-          axios.post( "http://localhost:8082/amazon/users/register",payload)
+          axios.post( "https://amazon-clone-user-mservice.herokuapp.com/amazon/users/register",payload)
           .then(
             (data) => {
             // localStorage.setItem("users",data);

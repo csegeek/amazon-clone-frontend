@@ -16,7 +16,7 @@ function PlaceOrder(props) {
   useEffect(
   ()=>{
      
-    axios.get(`http://localhost:8083/amazon/products/getById/${id}`).then((res)=>{
+    axios.get(`https://amazon-clone-product-mservice.herokuapp.com/amazon/products/getById/${id}`).then((res)=>{
       setproductDetails(res.data);
     })
     
@@ -57,7 +57,7 @@ function PlaceOrder(props) {
 
  console.log(cart)
 
-    axios.post("http://localhost:8081/amazon/addToCart/add",cart)
+    axios.post("https://amazon-clone-cart-mservice.herokuapp.com/amazon/addToCart/add",cart)
     .then(  
      alert("Addproduct to Cart"),
      window.location.reload()

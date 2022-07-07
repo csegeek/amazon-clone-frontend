@@ -17,7 +17,7 @@ function Login() {
   
     signInWithEmailAndPassword(auth,email, password)
     .then((res) => {
-       axios.get(`http://localhost:8082/amazon/users/getByUniqueid/${res.user.uid}`)
+       axios.get(`https://amazon-clone-user-mservice.herokuapp.com/amazon/users/getByUniqueid/${res.user.uid}`)
        .then( (userdata)=> {
         localStorage.setItem("user",userdata.data.name)
         localStorage.setItem("userId",userdata.data.uniqueId)

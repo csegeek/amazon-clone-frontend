@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import './Navigation.css';
 import { CartContext } from '../CartContext';
 import { Link } from 'react-router-dom';
-import { Button } from '@mui/material';
 import { signOut } from 'firebase/auth';
 import { auth } from '../../firebase';
 

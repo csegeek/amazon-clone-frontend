@@ -11,7 +11,7 @@ function RightPanel(props) {
  useEffect(
     ()=>{
 
-     axios.get("http://localhost:8083/amazon/products/getAllProduct").then((res) => {
+     axios.get("https://amazon-clone-product-mservice.herokuapp.com/amazon/products/getAllProduct").then((res) => {
           console.log(res);
           setProducts(res.data);
       });
