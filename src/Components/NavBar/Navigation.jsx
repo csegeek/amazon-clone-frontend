@@ -4,26 +4,24 @@ import { CartContext } from '../CartContext';
 import { Link } from 'react-router-dom';
 import { signOut } from 'firebase/auth';
 import { auth } from '../../firebase';
+import { useNavigate } from 'react-router-dom'
+import { useContext } from 'react';
+ function Navigation()  {
 
-export default class Navigation extends Component {
-     static contextType=CartContext;
-      constructor(props){
-        super(props)
-        this.state={
-          user:""
-        }
-       
-      }
-
+     const context=useContext(CartContext);
+     let size=context.size;
+     const naviagte=useNavigate();
     
 
-logout=()=>{
+const logout=()=>{
   signOut(auth).then(
     () => {
       // Sign-out successful.
        localStorage.removeItem("user");
        localStorage.removeItem("userId");
-          window.location.reload();
+       naviagte("/");
+       window.location.reload();
+
     }).catch((error) => {
       alert(error.message)
     });
@@ -34,8 +32,9 @@ logout=()=>{
      
 
 
-  render() {
-    let {item,size,increment}=this.context;
+
+  
+    
     return (
       <div>
       <div className='navbar__component'> 
@@ -89,7 +88,7 @@ logout=()=>{
           <div className='logout__btn'> 
           {
             (localStorage.getItem("user") !=null)?
-            <button id="logout" onClick={this.logout}> Logout</button>:<div></div>
+            <button id="logout" onClick={logout}> Logout</button>:<div></div>
           }
            </div>
          
@@ -124,4 +123,6 @@ logout=()=>{
       </div>
     )
   }
-}
+
+
+export default Navigation;
