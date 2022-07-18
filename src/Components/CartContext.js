@@ -25,9 +25,9 @@ import axios from "axios";
                 //console.log(res)
                 this.setState({
                     item:res.data.list, 
-                    size:this.state.item.length
+                    size:res.data.list.length
                 })             
-              localStorage.setItem("cartsize",this.state.item.length);          
+              localStorage.setItem("cartsize",res.data.list.length);          
             }
        
     )
