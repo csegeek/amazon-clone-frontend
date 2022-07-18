@@ -22,12 +22,12 @@ import axios from "axios";
       var userid=localStorage.getItem("userId")
         axios.get(`https://amazon-clone-cart-mservice.herokuapp.com/amazon/addToCart/show/${userid}`).then(
             (res)=>{
-                console.log(res)
+                //console.log(res)
                 this.setState({
                     item:res.data.list, 
                     size:this.state.item.length
-                })
-               
+                })             
+              localStorage.setItem("cartsize",this.state.item.length);          
             }
        
     )
