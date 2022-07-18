@@ -19,6 +19,7 @@ const logout=()=>{
       // Sign-out successful.
        localStorage.removeItem("user");
        localStorage.removeItem("userId");
+       localStorage.removeItem("cartsize");
        naviagte("/");
        window.location.reload();
 
@@ -99,7 +100,7 @@ const logout=()=>{
            <Link to={"/checkout"}>
           <div className='navbar__cart navbar__text'>
             <div className='navbar__carticon'> 
-            <div className='navbar__cart_item_count'>{size}</div>
+            <div className='navbar__cart_item_count'>{localStorage.getItem("cartsize")}</div>
             <img src='https://ik.imagekit.io/amazonclone01/amazon-image/pngaaa.com-3531901_8BRFPeimf.png?ik-sdk-version=javascript-1.4.3&updatedAt=1656998498065' alt=''/>
             </div>
             <div className='navbar__cart 'style={{fontWeight:"700",marginTop:'1.7rem'}} > Cart</div>
